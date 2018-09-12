@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package hitungfibonacci;
-
+import java.util.Scanner;
 /**
  *
  * @author Nisrina Izdihar
@@ -19,6 +19,17 @@ public class HitungFibonacci {
     public static void main (String[] args){
         String identitas = "Nisrina Izdihar Ardana Putri / X RPL 5 / 32";
         tampiljudul(identitas);
+        
+        int n = tampilinput();
+    }
+    private static int tampilinput(){
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Bilangan ke-: ");
+        int n = scanner.nextInt();
+        
+        return n;
+    }   
     }
     
-}
+
